@@ -1,5 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #00a6ed;
+
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 header {
@@ -8,11 +16,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  max-width: 1200px;
+  max-width: 100%;
   padding: 50px;
   display: block;
   margin: 0 auto;
-  height: 580px;
+  /* height: 580px; */
 }
 
 header h3 {
@@ -73,15 +81,52 @@ footer {
   /* padding-top: 15px; */
 }
 
-footer .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px;
+main h5 {
+color: #272044;
+font-size: 16px;
+font-weight: 700;
+letter-spacing: 5px;
+text-transform: uppercase;
+opacity: 0.3;
 }
 
-footer .footer-box {
-  padding: 0 30px 0 30px;
+.row {
+margin:0;
+padding:100px 0 100px 0;
+background-color: white;
 }
+
+main img {
+  max-width: 100%;
+  padding: 18px;
+}
+
+.col-6, .col {
+  padding: 0 30px;
+}
+
+main h2 {
+  color: #272044;
+font-size: 40px;
+font-weight: 700;
+margin: 0;
+padding-bottom:18px; 
+}
+
+main p {
+  color:#272044;
+font-size: 16px;
+font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 100px 200px;
+  grid-gap: 40px;
+}
+
+
 footer h4 {
   font-weight: bold;
   font-size: 20px;
@@ -91,7 +136,7 @@ footer p {
   line-height: 1.5;
   font-weight: 300;
   font-size: 16px;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 footer ul {
@@ -123,21 +168,47 @@ footer a:hover {
   opacity: 0.7;
 }
 
+/* @media (min-width: 900px) {
+  .col-sm {
+    display: none;
+  }
+  .col {
+    padding: 30px;
+  }
+} */
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
   header h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   header h1 {
     font-size: 48px;
   }
   header h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   header a {
-    font-size: 18px;
-    padding: 15px 10px;
+    font-size: 15px;
+    padding: 10px 10px;
   }
+.grid {
+  grid-template-columns: 1fr;
+  padding: 30px;
+  grid-gap: 30px;
+}
+.row {
+  padding: 0;
+}
+.col-6 {
+  padding: 10px;
+}
+.col-lg {
+  padding: 0;
+}
+.row img {
+  padding: 30px;
+}
 }
