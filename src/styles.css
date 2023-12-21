@@ -74,9 +74,9 @@ footer {
 }
 
 footer .grid {
-  padding: 100px 171px 100px 171px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
 }
 
 footer .footer-box {
