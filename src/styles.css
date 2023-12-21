@@ -1,13 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #00a6ed;
+  background-color: #f8f8f8;
 
 }
 
 .container {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   max-width: 100%;
+  padding: 50px 100px 50px 100px;
 }
 
 header {
@@ -88,21 +89,23 @@ font-weight: 700;
 letter-spacing: 5px;
 text-transform: uppercase;
 opacity: 0.3;
+
 }
 
 .row {
 margin:0;
-padding: 50px 100px 50px 100px;
+/* padding: 50px 100px 50px 100px; */
 background-color: white;
 }
 
 main img {
   max-width: 100%;
   padding: 0px;
+  margin-bottom: 20px;
 }
 
-.col-6, .col {
-  /* padding: 0 30px; */
+.col-lg {
+  padding: 0 16px 0 0;
 }
 
 
@@ -124,7 +127,7 @@ font-weight: 400;
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 100px 200px;
+  /* padding: 150px 120px 80px; */
   grid-gap: 40px;
 }
 
@@ -196,6 +199,7 @@ footer a:hover {
     font-size: 15px;
     padding: 10px 10px;
   }
+  
 .grid {
   grid-template-columns: 1fr;
   padding: 30px;
