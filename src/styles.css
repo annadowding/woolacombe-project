@@ -128,7 +128,7 @@ main p {
   justify-content: center;
   place-items: center;
   width: 100%;
-  column-gap: 60px;
+  column-gap: 7%;
   /* padding: auto 24px; */
 }
 
