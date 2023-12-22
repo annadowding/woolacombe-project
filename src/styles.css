@@ -144,16 +144,21 @@ section {
   margin: 30px
 }
 
-.card-image{
+.card-images{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.card-image img {
-  max-width: 100%;
+.card-images img {
+  height: 95%;
 }
 
-.card-header {
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.attractions-header {
   text-align: center;
   padding-top: 30px;
 }
@@ -252,7 +257,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   header {
     padding: 60px 0;
   }
