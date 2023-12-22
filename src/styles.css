@@ -127,8 +127,8 @@ main p {
   display: flex;
   justify-content: center;
   place-items: center;
-  max-width: 100%;
-  padding: auto 24px;
+  width: 100%;
+  /* padding: auto 24px; */
 }
 
 section {
@@ -137,11 +137,11 @@ section {
 }
 
 .card {
-  padding: 20px;
+  /* padding: 20px; */
   border: none;
   width: 300px;
   max-width: 100%;
-  margin: 30px
+  /* margin: 30px; */
 }
 
 .card-images{
