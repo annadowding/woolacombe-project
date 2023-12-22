@@ -151,22 +151,40 @@ section {
 }
 
 .card-images img {
-  height: 95.46%;
-  margin: 0;
+  height: 95.3%;
 }
 
-.embed {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
 
 .card-body {
   padding: auto 10px;
 }
 
-.attractions-header {
+.cards-header,
+.music-header  {
   text-align: center;
   padding-top: 30px;
+}
+
+.embed-map {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+
+
+.embeds-music {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  object-fit: fill;
+}
+
+
+.embed-music {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  margin: 0 auto;
 }
 
 .cards-flex h6 {
@@ -216,6 +234,10 @@ section {
 
 .cards-flex .btn:hover {
   opacity: 0.8;
+}
+
+.music {
+  background-color: white;
 }
 
 .grid {
@@ -306,12 +328,28 @@ footer a:hover {
     display:grid;
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 576px) {
-  .col {
-  text-align: center;
-}
+  .embed-music {
+      max-width: 100%;
+    }
+    .embeds-music {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  
+  
+  @media (max-width: 576px) {
+    .col {
+      text-align: center;
+    }
+    .embed-music {
+        max-width: 100%;
+      }
+      .embeds-music {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 }
 
 @media (max-width: 1200px) {
