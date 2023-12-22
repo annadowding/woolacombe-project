@@ -96,7 +96,6 @@ h5 {
 
 .row {
   margin: 0;
-  /* padding: 50px 100px 50px 100px; */
   background-color: white;
 }
 
@@ -256,7 +255,7 @@ footer a:hover {
   header {
     padding: 60px 0;
   }
-
+  
   header p {
     font-size: 25px;
   }
@@ -270,23 +269,19 @@ footer a:hover {
     font-size: 15px;
     padding: 10px 10px;
   }
-
   .grid {
     grid-template-columns: 1fr;
     padding: 30px;
     grid-gap: 30px;
   }
-  .row {
-    padding: 0;
-  }
-  .col-6 {
-    padding: 10px;
+  .container {
+    padding: 50px;
   }
   .col-lg {
     padding: 0;
   }
   .row img {
-    padding: 30px;
+    padding: 11px;
   }
   .card {
     width: 75%;
@@ -294,5 +289,17 @@ footer a:hover {
   .cards-flex {
     display:grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+  text-align: center;
+}
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 30px;
   }
 }
