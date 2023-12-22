@@ -173,10 +173,10 @@ section {
 
 
 .embeds-music {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  object-fit: fill;
+   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 
@@ -343,13 +343,7 @@ footer a:hover {
     .col {
       text-align: center;
     }
-    .embed-music {
-        max-width: 100%;
-      }
-      .embeds-music {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
+     
 }
 
 @media (max-width: 1200px) {
